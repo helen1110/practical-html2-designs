@@ -65,7 +65,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;
-    height: 80vh;
+    min-height: 80vh;
 
     
 }.text-section h2{
@@ -137,9 +137,13 @@ h4{
 p{
     font-size: 16px;
 }
-.arrow{
-    margin-left: 10px;
-    margin-top: 10px;
+.text-section a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+#arrow{
+    margin-left: 15px; 
 }
 h5{
     font-size: 48px;
@@ -153,21 +157,23 @@ h5{
     padding: 12px;
 }
 
-
 #appointment-section .first-section{
     width: 50%;
-    margin-top: 120px;
+    margin-top: 100px;
     margin-bottom: 120px;
 }
 #appointment-section .second-section{
     width: 30%;
     margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: 40px;
 }
 #appointment-section .first-section h4{
-    font-size: 54px;
+    font-size: 50px;
 }
 #appointment-section .first-section p{
     font-size: 16px;
+    margin-top: 12px;
 }
 #appointment-section .second-section .image-pack .line{
     width: 10%;
@@ -175,15 +181,15 @@ h5{
     flex-direction: column;
 }
 #appointment-section .second-section .image-pack img{
-    width: 100%;
+    /* width: 100%; */
+
 }
 .dotted-line{
     border-left: 2px dotted #FF6433;
     height: 50px;
     margin-left: 5%;
     margin-top: -50px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px;   
 }
 .image-pack{
     width: 12%;
@@ -200,125 +206,82 @@ h5{
     font-size: 27px;
 }
 
-
 #maintenance-section{
     padding: 80px 0px;
     background-color:  #F2F2F2;
+    min-height: 100vh;
 }
-.grid-container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    
-}
-.grid-container{
-    display: inline-flexbox;
-    justify-content: center; 
-    align-items: center; 
-    width: 100%;
-    margin: 10px auto;
-    padding-top: 30px;
-
-
-}
-.grid-item{
-    border: ipx solid #F2F2F2;
-    padding: 1px;
+#maintenance-section h2, #maintenance-section h6{
     text-align: center;
-    margin: 0px;
 }
-
-.grid-item img{ 
-    width: 250px;
-    object-fit: cover;
-} 
-.grid-item img:hover{
-    color: #661CE7;
-}   
-.text-write {
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-}
-.text1 {
-    margin-top: 15px;
-    padding-top: 100px;
-    font-family: manrope;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 36px;
-    font-weight: 600;
-    text-align: center;
-
-}
-.text2 {
-    /* margin-top: 120px; */
-    font-family: manrope;
-    font-size: 25px;
-    font-style: normal;
-    line-height: 76px;
-    font-weight: 800;
-    letter-spacing: 0.03em;
-    text-align: center;
-
-}
-.flex1{
+#maintenance-section .offers {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+#maintenance-section .offers .offer-box{
+    background: #fff;
+    height: 232px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    width: 24%;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+#maintenance-section .offers .offer-box:hover{
+    background: #FF6433;
+    color: #fff;
+}
+.learn-arrow a{
+    display:flex ;
     justify-content: flex-end;
     
-    
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
 }
-.arrow2{
-    margin-left: 10px;
-    margin-top: 2px;
-}
-
 
 #get-section{
-    padding: 80px 0px;
-    background-color: #F2F2F2;
+    /* background-color: #F2F2F2; */
+    min-height: 500px;
 }
-
 .flex-1{ 
     display: flex;
-    
 } 
-
 .image-get1{
-    width: 50%;
+    width: 20%;
     background-image: url(https://res.cloudinary.com/doivnxitm/image/upload/v1650830558/Image_1_fkonkl.png);
     background-size: cover;
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
-    height: 50vh;
+    min-height: 500px;
+}
+.text-get{
+    width: 40%;
+    min-height: 450px;
+    background-color: #FF6433;
 }
 .image-get2{
-    width: 50%;
+    width: 40%;
     background-image: url(https://res.cloudinary.com/dyye5wssv/image/upload/v1650553856/ovGrEUgrkyE_mgkqn3.png);
-    height: 50vh;
+    min-height: 500px;
     background-position: center;
     background-size: cover;
-
 }
-.text-get{
-    width: 30%;
-    height: 50vh;
-    background-color: #FF6433;
-    margin-left: 40%;
-}
-.text-get{
-    position: absolute;
-    left: -240px;
-}
-.text-get1{
+.text-get h4{
     font-family: 'Manrope', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 35px;
     color: #FFFFFF;
     text-align: center;
     margin: auto;
     padding-top: 90px;
-    width: 80%;
+    /* width: 80%; */
 }
 .bnt2{
     background: black;
@@ -337,15 +300,14 @@ h5{
     display: flex;
     justify-content: space-between;
     margin: 0px auto;
-    
 }
 .rating{
     margin-top: 5%;
 }
 .rating-number{
     color: #661CE7;
-    font-weight: 800;
-    font-size: 48px;
+    font-weight: 700;
+    font-size: 45px;
     font-family: 'manrope',sans-serif;
 }
 .rating-number:hover{
@@ -355,12 +317,15 @@ h5{
     font-family: 'manrope',sans-serif;
     color: #1f1c1c;
     opacity: 0.9;
-
 }
 
 #brands-section{
     padding: 80px 0px ;
     background-color: #FAFAFA;
+    width: 100%;
+    margin-top: 50px;
+}
+.brand-image{
     width: 100%;
 }
 .brand-image img{
@@ -376,4 +341,653 @@ h5{
     text-align: center;
     font-size: 48px;
     margin-top: 20px;
+}
+
+#customers-section{
+    padding: 80px 0px;
+    background-color: #F2F2F2;
+    width: 100%;
+    
+}
+.heading{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.03em
+}
+.text{
+    display: flex;
+    width: 100%;
+    gap: 25px;
+}
+#customers-section .first-page{
+    background: #FFFFFF;
+    border: 1px solid rgba(172, 172, 172, 0.29);
+    border-radius: 6px;
+    width: 50%;
+    min-height: 50vh;
+    margin-top: 40px;
+}
+#customers-section .second-page{
+    background: #FFFFFF;
+    border: 1px solid rgba(172, 172, 172, 0.29);
+    border-radius: 6px;
+    width: 50%;
+    min-height: 50vh;
+    margin-top: 40px;
+}
+.image-page{
+    margin-top: 40px;
+    padding-left: 20px;
+}
+.text1-page h3{
+    font-size: 23px;
+    padding: 20px;
+}
+.left-arrow{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+    margin-right: 90px;
+    gap: 20px;
+}
+.left-arrow img{
+    width: 5%;
+}
+
+#faq-section{
+    padding: 80px 0px;
+    background-color: #E2E6E9;
+    min-height: 100vh;
+}
+#faq-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+}
+.faq-main-box{
+    width: 60%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.faq-main-box .faq-box{
+    background: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.faq-main-box .faq-box .faq-control{
+    background: #FF6433;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 900;
+    cursor: pointer;
+}
+.faq-control h2{
+    align-items: center;
+    padding-top: 12px;
+}
+.faq-box .header-section{
+    display: flex;
+    justify-content: space-between;
+}
+.faq-box .header-section h4{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+}
+.faq-box .answer-section{
+    padding-top: 10px;
+}
+.faq-box .answer-section .answer-box{
+    width: 80%;
+}
+
+#footer-section{
+    padding: 80px 0px;
+    background-color: #1E1B1B;
+    min-height: 100vh;
+    color: #FFFFFF;
+}
+.footer-main-box{
+    display: flex;
+}
+.footer-right{
+    width: 45%;
+}
+.footer-left{
+    width: 55%;
+}
+.text-chip h2{
+    color: #FFFFFF;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    padding-top: 30px;
+}
+.social-wrap{
+    display: flex;
+    margin: 0 auto;
+}
+.social{
+    padding-left: 1em;
+    padding-top: 80px;
+}
+.social:hover {
+    cursor: pointer;
+}
+.footer-left-side{
+    line-height: 3em;
+    width: 100%;
+    /* padding-left: 8em; */
+}
+
+#footer-bottom{
+    width: 100%;
+    background: #000;
+    height: 30vh;
+    
+}
+.footer-bottom-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+    /* padding-bottom: 1em; */
+}
+.footer-bottom-header .icon:hover{
+    cursor: pointer;
+}
+.bottom-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-navigation ul{
+    display: flex;
+}
+.bottom-navigation ul li {
+    padding-right: 3em;
+    font-family: "manrop", sans-serif;
+}
+.bottom-navigation ul li:hover {
+    text-decoration: underline;
+} 
+.bottom-navigation ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+} 
+.copyright p{
+    opacity: 0.4;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #FFFFFF;
+} 
+#mechanic-section .mechanic-image{
+     width: 45%;
+}
+#mechanic-section .mechanic-text{
+    width: 55%;
+}
+#mechanic-section{
+    padding: 80px 0;
+}
+.mechanic-image{
+    background-image: url(https://res.cloudinary.com/doivnxitm/image/upload/v1653029592/Header_Image_2_pyac0x.png);
+    background-size: cover;
+    /* background-position: center; */
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+.mechanic-text{
+    background: #000;
+    color: #FFFFFF;
+    align-items: center;
+    padding: 4em;
+    font-family: 'manrope', sans-serif;
+    min-height: 100vh;
+}
+.mechanic-text h1{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 84px;
+}
+.mechanic-text p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 175%;
+}
+#auto-section{
+    padding: 80px 0;
+    background-color: #F5F5F5;
+    justify-content: space-between;
+}
+#auto-sectioon h4{
+    width: 100%;
+    font-size: 20px;
+    line-height: 1em;
+    margin: 0 auto;
+    font-family: 'manrope', sans-serif ;
+    padding-bottom: 30px;
+    text-align: center;
+    padding-top: 15px;
+    letter-spacing: o.1em;
+    float: right;
+}
+.auto-left{
+    width: 45%;
+    background-color: #FFFFFF;
+    background-size: cover;
+    align-items: center;
+    color: #000;
+    font-family: 'manrope', sans-serif;    
+}
+.auto-text {
+    padding-top: 3em;
+}
+.auto-connect{
+    margin: 2em;
+}
+.auto-left p{
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 12px;
+    padding-bottom: 1.2em;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'manrope', sans-serif;
+}
+.auto-car{
+    background-image: url(https://res.cloudinary.com/doivnxitm/image/upload/v1653163217/Image_1_mspstm.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 35vh;
+}
+.auto-right{
+    width: 55%;
+}
+.auto-link{
+    justify-content: flex-start;
+    padding-top: 3px;
+    width: 100%;
+    font-family: 'manrope', sans-serif;
+    font-weight: bold;
+}
+.auto-link a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.auto-link a:hover{
+    color: #FF6433;
+}
+#arrow{
+    padding-right: 12px;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 15px; 
+    /* height: 100vh; */
+}
+.auto-image img h4{
+   padding-bottom: 120px;
+   justify-content: center;
+   align-items: center;
+}
+.auto-image{
+    text-align: center;
+    background-size: cover;
+    background-color: #FFFFFF;
+    color: #000;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    height: 180px;
+    padding-top: 50px;
+} 
+.auto-image:hover{
+    background-color: #FF6433;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+#how-section{
+    padding: 80px 0;
+    background-color: #fff;
+}
+.how-section1 .how-left{
+    width: 50%;
+    min-height: 50vh;
+}
+.how-section1 .how-right{
+    width: 50%;
+    min-height: 50vh;
+}
+.how-left ul{
+    list-style: none;
+}
+.how-left ul li{
+    margin-bottom: 20px;   
+}
+.how-left p{
+    margin-top:15px ;
+    margin-bottom: 15px ;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Manrope';
+    margin-left: 15px;
+}
+.how-left h1{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 35px;
+    font-weight: 700;
+}
+.how-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 100px;
+}
+.how-image1{
+    background-image: url(https://res.cloudinary.com/doivnxitm/image/upload/v1653479385/Image_1_1_qsuiav.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 420px;
+    width: 304px;
+    margin-right: 1em;
+    
+}
+.how-image2{
+    background-image: url(https://res.cloudinary.com/doivnxitm/image/upload/v1653479399/Image_2_ilgv1v.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 420px;
+    width: 304px;
+}
+.how-section2{
+    margin-top: 3em;
+}
+.how-section2 .how-right{
+    width: 50%;
+    min-height: 50vh;
+}
+.how-section2 .how-left{
+    width: 50%;
+    min-height: 50vh;
+}
+.how-section2 .how-left{
+    display: flex;
+    margin-bottom: 1em;
+}
+.how-image3{
+    background-image: url(https://res.cloudinary.com/doivnxitm/image/upload/v1653479410/Image_2_gxetsn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 420px;
+    width: 304px;
+}
+.how-image4{
+    background-image: url(https://res.cloudinary.com/doivnxitm/image/upload/v1653479422/Image_3_p3drso.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 420px;
+    width: 302px;
+    margin-left: 1em;
+}
+.how-text{
+    width: 90%;
+    margin-left: 2em;
+    font-family:'manrope', sans-serif ;
+}
+.how-text h1{
+    font-weight: 700;
+    font-size: 45px;
+    padding-bottom: 0.6em;
+}
+.how-text p{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+
+/* mobile view */
+@media (max-width: 426px){
+    .main-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .right-section{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        display: none;
+    }
+    .right-section ul li{
+        padding: 10px 0px;
+        margin-right: 0px;
+    }
+    .right-section .navigation{
+        border: none;
+        width: 100%;
+    }
+
+    .right-section .navigation ul{
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .right-section ul li a{
+        display: block;
+    }
+    .road-assistance{
+        padding: 10px 0px;
+    }
+
+    .flex-sm-column{
+        flex-direction: column;
+    }
+    #hero-section .text-section, #hero-section .image-section {
+        width: 100%
+        
+    }
+    .text-section h2{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    #hero-section .text-section{
+        order: 2;
+    }
+    #hero-section .image-section{
+        order: 1;
+    }
+    .text-section h2{
+        font-size: 40px;
+    }
+    .content1-section{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .content2-section{
+        width: 100%;
+    }
+    .text-section{
+        width: 80%;
+    }
+    #service-section .content1-section .image-box{
+        width: 10%;
+    }
+    h3{
+        font-size: 35px;
+    }
+    h5{
+        font-size: 35px;
+    }
+    #appointment-section .first-section{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    #appointment-section .second-section{
+        width: 100%;
+        margin-bottom: 150px;
+    }
+    
+    #appointment-section .first-section h4{
+        font-size: 35px;
+        width: 100%;
+    }
+    p{
+        font-size: 18px;
+        width: 100%;
+    }
+    #appointment-section .second-section .text-pack h2{
+        font-size: 25px;
+        width: 100%;
+    }
+    .text2{
+        font-size: 12px;
+    }
+    .text-write{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    #maintenance-section .offers .offer-box{
+        width: 100%;
+    }
+    /* #maintenance-section .offers .offer-box{
+        width: 100%; */
+    
+    .flex-1{
+        flex-direction: column;
+    }
+    .image-get1{
+        width: 100%;
+    }
+    .text-get{
+        width: 100%;
+    }
+    .image-get2{
+        width: 100%;
+    }
+    .experience{
+        width: 100%;
+    }
+    .brand1{
+        width: 100%;
+    }
+    .brand-image img{
+        width: 100%;
+    }
+    .brand-text h2{
+        width: 100%;
+        font-size:50px ;
+    }
+    .text{
+        flex-direction: column;
+    }
+    #customers-section .first-page{
+        width: 100%;
+    }
+    .heading{
+        width: 100%;
+        font-size: 28px;
+    }
+    #customers-section .second-page{
+        width: 100%;
+    }
+    #faq-section h2{
+        width: 100%;
+        font-size: 38px;
+    }
+    .faq-main-box .faq-box{
+        width: 100%;
+    }
+    .faq-main-box{
+        width: 100%;
+    }
+    .footer-main-box{
+        flex-direction: column;
+    }
+    .footer-right{
+        width: 100%;
+    }
+    .social{
+        width: 100%;
+    }
+    .footer-left{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .bottom-navigation{
+        display: none;
+    }
+    
+}
+/* tablet view */
+@media(max-width: 769px){
+    .container{
+        width: 90%;
+    }
+    .road-assistance{
+        display: none;
+    }
+    .text-section h2{
+        font-size: 35px;
+    }
+    .justify-between{
+        justify-content: space-between;
+    }
+    h3, h5{
+        font-size: 35px;
+    }
+    #service-section .content1-section .image-box{
+        width: 15%;
+    }
+    .text-section{
+        width: 70%;
+    }
+    #appointment-section .first-section h4{
+        font-size: 35px;
+    }
+    .image-pack{
+        width: 15%;
+    }
+    #appointment-section .second-section{
+        width: 43%;
+    }
+    #maintenance-section .offers .offer-box{
+        width: 32%;
+    }
+    .heading{
+        font-size: 35px;
+    }
+    #faq-section h2{
+        font-size: 35px;
+    }
+    .bottom-navigation{
+        display: none;
+    }
+    
 }
